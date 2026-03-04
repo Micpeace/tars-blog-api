@@ -76,7 +76,7 @@ export default async function handler(req, res) {
       return {
         id: page.id,
         title,
-        slug,
+        slug: slug.trim(),
         summary,
         cover,
         publishDate,
